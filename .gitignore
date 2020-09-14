@@ -4,6 +4,7 @@
 
 # Yarn Integrity file
 .yarn-integrity
+tags
 
 # dotenv environment variables file
 .env
