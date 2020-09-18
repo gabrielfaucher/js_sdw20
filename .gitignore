@@ -2,6 +2,11 @@
 **/node_modules
 **/jspm_packages
 
+# Git
+.git
+.github
+.gitignore
+
 # Yarn Integrity file
 .yarn-integrity
 tags
