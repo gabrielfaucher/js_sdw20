@@ -15,7 +15,6 @@ function calcTable(table) {
         let p = document.createElement('p')
         p.innerHTML = `${i} x ${table} = ${i*table}`
         results.appendChild(p)
-
     }
 }
 
