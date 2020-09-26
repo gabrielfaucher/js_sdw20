@@ -1,12 +1,14 @@
-function event(id, event, styleprop, stylepropval) {
-    let el = document.querySelector(`#${id}`)
+// Function declaration for repeated event calling
+function setEvent(id, event, styleprop, stylepropval) {
+    let el = document.querySelector(`#${id}`);
     el.addEventListener(event, () => {
-        el.style[styleprop] = stylepropval
-    })
+        el.style[styleprop] = stylepropval;
+    });
 }
 
-event('onFocus', 'focus', 'background', 'magenta')
-event('onChange', 'change', 'color', 'orange' )
-event('onMouseOver', 'mouseover', 'color', 'yellow')
-event('onMouseOut', 'mouseout', 'color', 'purple')
-event('onClick', 'click', 'display', 'none')
+// Execute events
+setEvent('onFocus', 'focus', 'background', 'magenta');
+setEvent('onChange', 'change', 'color', 'orange');
+setEvent('onMouseOver', 'mouseover', 'color', 'yellow');
+setEvent('onMouseOut', 'mouseout', 'color', 'purple');
+setEvent('onClick', 'click', 'display', 'none');
